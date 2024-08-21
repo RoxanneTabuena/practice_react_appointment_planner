@@ -1,9 +1,9 @@
 import React from "react";
 
-export const TileList = ({contacts}) => {
-  const list = contacts.map((contact, index) =>{
-    const { name } = contact
-    const description = contact
+export const TileList = (props) => {
+  const list = props.list.map((item, index) =>{
+    const { name } = item
+    const description = item
     return <Tile name={name} description={description} key={index} />
   })
   return (
