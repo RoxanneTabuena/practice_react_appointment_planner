@@ -90,7 +90,7 @@ select {
   margin-bottom: 4px;
 }
 
-.tile.tile-title {
+.tile-title {
   font-weight: bold;
 }
 
@@ -99,4 +99,9 @@ select {
   border: 2px solid black;
   width: fit-content;
   padding: .5rem;
+}
+
+.lost{
+  display: flex;
+  flex-wrap: wrap;
 }
