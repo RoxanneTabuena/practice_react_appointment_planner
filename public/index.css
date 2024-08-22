@@ -30,6 +30,19 @@ h2 {
   margin-bottom: 18px;
 }
 
+form{
+  display:flex;
+  flex-direction: column;
+}
+
+button{
+  color: white;
+  background-color: #000000;
+  width: 10%;
+  padding: .5rem;
+
+}
+
 section {
 }
 
@@ -66,7 +79,7 @@ select {
   border-radius: 4px;
   padding: 7px 9.5px 9px 9.5px;
   outline: none;
-  width: 100%;
+  width: 30%;
   margin-bottom: 10px;
   box-sizing: border-box;
 }
@@ -83,4 +96,7 @@ select {
 
 .tile-container {
   margin-bottom: 20px;
+  border: 2px solid black;
+  width: fit-content;
+  padding: .5rem;
 }
