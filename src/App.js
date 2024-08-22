@@ -48,7 +48,9 @@ function App() {
           element={
             <AppointmentsPage
               appointments={appointments}
-              addAppointment={addAppointment} />}
+              addAppointment={addAppointment} 
+              contacts={contacts}
+              />}
         />
       </Route>
     )
