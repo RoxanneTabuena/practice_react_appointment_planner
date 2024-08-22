@@ -11,7 +11,7 @@ export const ContactsPage = ({contacts, addContact}) => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(!duplicate){
+    if(duplicate===false){
       addContact(name, phone, email)
       setName('')
       setPhone('')
@@ -32,20 +32,18 @@ export const ContactsPage = ({contacts, addContact}) => {
         <h2>Add Contact</h2> 
         <ContactForm 
           name={name}
-          setName = {setName}
+          setName ={setName}
           phone={phone}
-          setPhone={setPhone}
+          setPhone ={setPhone}
           email={email}
-          setEmail={setEmail}
-          handleSubmit={handleSubmit}
+          setEmail ={setEmail}
+          handleSubmit = {handleSubmit}
         />
       </section>
       <hr />
       <section>
         <h2>Contacts</h2>
-        <TileList 
-          list = {contacts}
-        />
+        <TileList list={contacts} />
       </section>
     </div>
   );
