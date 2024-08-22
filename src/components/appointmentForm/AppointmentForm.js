@@ -31,7 +31,6 @@ export const AppointmentForm = ({
   }
   return (
     <>
-    <h2>Appointment Form</h2>
     <form onSubmit={handleSubmit}>
       <label for="purpose">Purpose: </label>
       <input 

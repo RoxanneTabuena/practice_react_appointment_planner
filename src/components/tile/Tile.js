@@ -1,19 +1,18 @@
 import React from "react";
 
-export const Tile = ({info},{title}) => {
-  console.log(title)
- let  tile = []  
- Object.values(info).forEach((value)=>{
+export const Tile = ({info , title}) => {
+ let  tile = Object.values(info).map((value)=>{
   if(typeof value === "object"){
-    const contact = Object.values(value);
-    const nameStr= `Name: ${contact[0]}`
-    const phoneStr= `Phone: ${contact[1]}`
-    const emailStr= `Email: ${contact[2]}`
-     tile.push(<p>{nameStr}</p>)
-     tile.push(<p>{phoneStr}</p>)
-     tile.push(<p>{emailStr}</p>)
+    const [name, phone, email ] = Object.values(value);
+    return(
+      <div>
+        <p>{name}</p>
+        <p>{phone}</p>
+        <p>{email}</p>
+      </div>
+    )
   }else{
-     tile.push(<p>{value}</p>)
+    return <p>{value}</p>
   }
  })
   return (

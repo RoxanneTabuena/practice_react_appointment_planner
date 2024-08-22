@@ -20,7 +20,6 @@ export const ContactForm = ({
   } 
   return (
     <>
-    <h2>Contact Form</h2>
     <form onSubmit={handleSubmit}>
       <label for="name">Name: </label>
       <input 
