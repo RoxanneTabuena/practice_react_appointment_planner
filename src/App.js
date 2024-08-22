@@ -22,9 +22,9 @@ function App() {
     };
     setContacts((contacts) => [...contacts, newContact]);
   };
-  const addAppointment = (name, contact, date, time) => {
+  const addAppointment = (purpose, contact, date, time) => {
     const newAppt = {
-      name: name,
+      purpose: purpose,
       contact: contact,
       date: date,
       time: time,
